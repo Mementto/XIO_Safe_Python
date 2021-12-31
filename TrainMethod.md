@@ -1,6 +1,6 @@
-#训练方式
+# 训练方式
 
-##第一步：存入数据集
+## 第一步：存入数据集
 **以下是数据集的路径**
 ````
 YOLOX-main
@@ -28,7 +28,7 @@ YOLOX-main
 
 [4]执行`make_trin_val_test_set.py`文件
 ***
-##第二步：修改输出分类
+## 第二步：修改输出分类
 **以下是网络输出分类的路径**
 ````
 YOLOX-main
@@ -59,7 +59,7 @@ YOLOX-main
 [2] 将你数据集中的标签数量输入到`yolox_voc_s.py`中（例如你的标签类型只有person，那么只需将文件中的变量`self.num_classes`修改为1，如果有person和dog，那么修改为2）
 ***
 
-##第三步：纠错
+## 第三步：纠错
 **标签中可能会出现类型错误（例如将person误写成了dog），训练时会报KeyError错误**
 
 [1]选中pycharm的顶部菜单栏Edit-->Find-->Find in Files，弹出框中输入dog，下面就会显示全部含有dog字符的文件（包括xml文件）
@@ -67,7 +67,7 @@ YOLOX-main
 [2]将xml中的dog全部改成person
 ***
 
-##第四步：训练
+## 第四步：训练
 ````
 YOLOX-main
 ├── tools
